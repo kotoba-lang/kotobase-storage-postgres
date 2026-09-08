@@ -11,7 +11,7 @@
   over Hyperdrive with postgres.js or node-postgres in a Worker, and over a
   plain client in Node for verification. Connection strings, Hyperdrive
   bindings and credentials stay in the host, never here."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [kotobase.storage.core :as storage]))
 
 (def schema-statements
