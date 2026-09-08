@@ -1,6 +1,6 @@
 (ns kotobase.storage.postgres
   "PostgreSQL implementation of immutable blocks and linearizable refs."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [kotobase.storage.core :as storage])
   (:import [java.sql Connection PreparedStatement ResultSet]
            [java.util Arrays]
