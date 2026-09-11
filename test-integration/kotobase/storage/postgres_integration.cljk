@@ -17,7 +17,7 @@
   Run:
     docker run -d --rm --name kotobase-pg-test -e POSTGRES_PASSWORD=... \\
       -p 55432:5432 postgres:16-alpine
-    clojure -M:test:integration"
+    kbb -M:test:integration"
   (:require [kotobase.storage.contract :as contract]
             [kotobase.storage.core :as storage]
             [kotobase.storage.postgres :as postgres])
