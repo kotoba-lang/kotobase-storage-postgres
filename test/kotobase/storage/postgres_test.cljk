@@ -1,6 +1,6 @@
 (ns kotobase.storage.postgres-test
-  (:require [clojure.test :refer [deftest is]]
+  (:require [kotoba.lang.error :as kerror] [clojure.test :refer [deftest is]]
             [kotobase.storage.postgres :as postgres]))
 
 (deftest datasource-is-required
-  (is (thrown? clojure.lang.ExceptionInfo (postgres/open {}))))
+  (is (thrown? kerror/ExceptionInfo (postgres/open {}))))
